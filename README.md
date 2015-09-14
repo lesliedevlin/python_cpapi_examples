@@ -55,3 +55,7 @@ To run, the (cpapi_examples.py) script requires:
 ##Acknowledgements
 Thanks to Apurva Singh for creating the Python CPAPI SDK (cpapi.py)
 Note: Apurva wrote a Ruby version of the CPAPI SDK that is also available.
+
+<!---
+#CPTAGS:community-supported api-example
+-->
