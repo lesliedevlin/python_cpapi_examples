@@ -58,4 +58,5 @@ Note: Apurva wrote a Ruby version of the CPAPI SDK that is also available.
 
 <!---
 #CPTAGS:community-supported api-example
+#TBICON:images/python_icon.png
 -->
