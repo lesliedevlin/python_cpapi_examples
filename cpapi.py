@@ -296,3 +296,21 @@ class CPAPI:
             return (json.loads(data), authError)
         else:
             return (None, authError)  
+
+    def getServerListDeactiv(self):
+        url = "%s:%d/%s/servers?state=deactivated" % (self.base_url, self.port, self.api_ver)
+        (data, authError) = self.doGetRequest(url, self.authToken)
+        if (data):
+            return (json.loads(data), authError)
+        else:
+            return (None, authError)
+
+    def doRetireServer(self, serverID):
+        url = "%s:%d/%s/servers/%s" % (self.base_url, self.port, self.api_ver, serverID)
+        reqData = {"server": {"retire": "true"}}
+        jsonData = json.dumps(reqData)
+        (data, authError) = self.doPutRequest(url, self.authToken, jsonData)
+        if (data):
+            return (json.loads(data), authError)
+        else:
+            return (None, authError)
